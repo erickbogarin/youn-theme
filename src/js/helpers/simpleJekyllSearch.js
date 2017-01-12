@@ -1,3 +1,8 @@
+/*! 
+ * Copyright 2011-2017 Willian Justen (https://github.com/willianjusten)
+ * Licensed under MIT (https://github.com/willianjusten/cards-jekyll-template/blob/master/LICENSE)
+ */
+
 (function($) {
     $.fn.simpleJekyllSearch = function(options) {
         var settings = $.extend({
@@ -5,9 +10,9 @@
             jsonFormat      : 'title,tags,url,date',
             template : '<li><article><a href="{url}">{title} <span class="entry-date"><time datetime="{date}">{date}</time></span></a></article></li>',
             searchResults   : '.search-results',
-            searchResultsTitle   : '<h4>Resultados da busca:</h4>',
+            searchResultsTitle   : '<h4>Results:</h4>',
             limit           : '10',
-            noResults       : '<p>Oh droga!<br/><small>Não encontramos nada :(</small></p>'
+            noResults       : '<p>Oh droga!<br/><small>No results :(</small></p>'
         }, options);
 
         var properties = settings.jsonFormat.split(',');
